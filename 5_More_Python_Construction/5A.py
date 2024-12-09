@@ -12,4 +12,14 @@ def crow(pointA, pointB):
                         (pointA[1] - pointB[1])**2 + \
                         (pointA[2] - pointB[2])**2 )
     return distance
-plt.show()
+
+
+if __name__ == '__main__':
+    test_points = np.array([
+        [-1, 0, -1],
+        [2, 4, -1],
+    ])
+
+    distance_AB = crow(test_points[0], test_points[1])
+    print(f"Distance between points {test_points[0]} and {test_points[1]} is {distance_AB}")
+
